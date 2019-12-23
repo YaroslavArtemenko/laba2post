@@ -4,8 +4,9 @@ from flask import Flask
 
 app = Flask(__name__)
 # подключение
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:Trouble228@localhost/LABA2'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://bqqxbvrfzdedks:b793bb6be49332e3500bd2293b1d9f640210e06c2d95d81f854b2f062c0302ea@ec2-174-129-254-223.compute-1.amazonaws.com:5432/darktthgk7vm7s'
 # связь
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
 
